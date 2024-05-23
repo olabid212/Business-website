@@ -1,0 +1,236 @@
+:root{
+    --primary-color: #3259E8;
+    --secondary-color:#fff;
+    --text-color:#000;
+    --transparent-color: #325ae81b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: space grotesk, sans-serif;
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    align-items: center;
+    padding: 20px 5%;
+    z-index: 999 !important;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    width: 50%;
+}
+
+.logo img{
+    width: 30%;
+}
+
+.div-menu-links{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.div-menu-links ul{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.div-menu-links ul a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 30px;
+}
+
+.btn{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+.login-btn{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--primary-color);
+}
+
+.resources-btn {
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: var(--secondary-color);
+}
+
+.resources-btn a{
+    color: var(--secondary-color);
+}
+
+#menu-button{
+    border-radius: 80px;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+    display: none;
+}
+
+#menu-button a{
+    color: var(--text-color);
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 250px;
+    padding: 20px;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: start;
+}
+
+.sidebar ul li{
+    margin-bottom: 30px;
+}
+
+.sidebar ul a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-top: 40px;
+
+}
+
+
+.hero-section{
+    padding: 150px 10%;
+    background-image: url(https://res.cloudinary.com/ddpzz4n4i/image/upload/v1716484309/bg_2_mwmrok.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: var(--secondary-color);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+#title-button {
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    color: var(--primary-color);
+    background-color: var(--transparent-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.hero-section-left-content {
+    flex: 50%;
+    margin-right: 40px;
+}
+
+.hero-section-left-content h2{
+font-size: 50px;
+font-weight: 700;
+}
+
+.hero-section-left-content p {
+    font-size: 18px;
+}
+
+.get-started {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+
+.hero-section-right-content {
+    flex: 50%;
+}
+
+
+.hero-section-right-content img{
+width: 90%;
+height: auto;
+border-radius: 20px;
+}
+
+.brand-logo-contaoiner {
+    padding: 30px 12%;
+    margin: 0 12%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand-logo img{
+    width: 15%;
+}
+
+
+
+@media (max-width: 800px) {
+.hideOnMobile {
+    display: none;
+}
+
+#menu-button {
+    display: block;
+}
+
+.sidebar{
+    width: 150px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.btn{
+display: block;
+}
+}

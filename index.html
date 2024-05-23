@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>123Done Landing Page</title>
+</head>
+<body>
+<!-- Navigation bar start -->
+<nav>
+    <div class="logo">
+        <a href="#" rel="home"><img src="./img/123logo.png" alt=""></a>
+    </div>
+
+    <div class="div-menu-links">
+        <ul class="">
+            <li class="hideOnMobile"><a href="#" rel="home">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Service</a></li>
+            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+
+    <div class="btn">
+        <a href="#" class="login-btn hideOnMobile">Login</a>
+        <a href="#" class="resources-btn hideOnMobile">Resources</a>
+    <p onclick="showSidebar()" id="menu-button"><a href="#"><i class="fa-solid fa-bars"></i></a></p>
+    </div>
+
+    
+</nav>
+
+<!-- mobile sidebar -->
+<div class="sidebar">
+    <ul>
+        <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark close-button"></i></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</div>
+<!-- mobile sidebar -->
+
+<!-- Navigation bar end -->
+
+
+<!-- Hero Section Start -->
+<main class="hero-section hero-section-overlay">
+    <div class="container">
+        <div class="hero-section-left-content">
+            <p id="title-button"><i class="fa-solid fa-bolt"></i> New: Our Ai Integration just landed</p>
+            <h2>Everything you need <br> to scale a global team</h2>
+            <p>Our company helps thousands of companies expand globally <br> with unmatched speed and flexibility</p> 
+
+            <button class="get-started">Get Started</button>
+        </div>
+
+        <div class="hero-section-right-content">
+            <img src="./img/herosect-img.png" alt="">
+        </div>
+        
+    </div>
+</main>
+
+<!-- Hero Section End -->
+
+<!-- brand-logos start -->
+<div class="brand-logo-contaoiner">
+    <div class="brand-logo">
+        <img src="./img/123logo-black.png" alt="">
+        <img src="./img/123logo-black.png" alt="">
+        <img src="./img/123logo-black.png" alt="">
+        <img src="./img/123logo-black.png" alt="">
+        <img src="./img/123logo-black.png" alt="">
+    </div>
+</div>
+<!-- brand-logos start -->
+
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+</body>
+</html>
